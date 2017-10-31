@@ -1,3 +1,9 @@
+# Prerequisits
+
+* node ( 6.9 or later)
+* yarn ( 0.22 or later)
+
+
 ### Installation
 
 1. run yarn install

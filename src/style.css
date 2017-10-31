@@ -1,0 +1,12 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    font-size:30px;
+    background-color: rgb(36, 116, 207);
+    color : #fff;
+    width: 100%;
+    padding: 20px;
+}

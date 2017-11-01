@@ -1,0 +1,33 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    font-size:30px;
+    background-color: rgb(36, 116, 207);
+    color : #fff;
+    width: 100%;
+    padding: 20px;
+}
+
+.items-table {
+    border: solid 1px silver;
+    border-collapse: collapse;
+    margin: 20px 0 0 20px;
+
+    th {
+        background-color :palevioletred;
+        color:#fff;
+    }
+
+    td {
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+        border: solid 1px silver;
+        height: 80px;
+        
+    }
+
+}

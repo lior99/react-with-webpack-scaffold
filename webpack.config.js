@@ -3,8 +3,8 @@ const webpack = require('webpack');
 
 module.exports = {
     entry : [
-        'babel-polyfill',
         'react-hot-loader/patch',
+        'babel-polyfill',
         'webpack-dev-server/client?http://0.0.0.0:5000',
         'webpack/hot/only-dev-server',
         path.resolve(__dirname + '/src/index.js')
@@ -32,10 +32,6 @@ module.exports = {
                 test : /\.scss$/,
                 loader : [ 'style-loader', 'css-loader', 'sass-loader']
             },
-            // {
-            //     test : /\.css$/,
-            //     loader : [ 'style-loader', 'css-loader']
-            // }
         ]
     },
     plugins : [

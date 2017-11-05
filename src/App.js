@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
-// import ItemsList from './components/ItemsList';
-import ItemsTable from './components/ItemsTable';
+import SimpleTable from './components/SimpleTable';
 
 const items = [
     { id:1, text : "some string", type: "string" },
@@ -17,8 +16,7 @@ class App extends React.Component {
         return (
             <div>
                 <Header headerText="This is sample"/>                
-                { /* <ItemsList items={items} /> */ }
-                <ItemsTable items={ items } />
+                <SimpleTable items={ items } />
             </div>
         )
     }

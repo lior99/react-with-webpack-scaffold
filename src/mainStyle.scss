@@ -7,7 +7,6 @@ body, html {
     font-size:30px;
     background-color: rgb(36, 116, 207);
     color : #fff;
-    width: 100%;
     padding: 20px;
 }
 
@@ -29,5 +28,56 @@ body, html {
         height: 80px;
         
     }
+}
 
+.simple-table {
+    border: solid 1px silver;
+    width: 80%;
+    margin: 20px;
+    
+    .table-head {
+        display: flex;
+        flex-direction: row;
+
+        div {
+            background-color:#42a5f5;
+            color:#fff;
+            flex: 1 1 auto;
+            padding: 10px;
+        }
+    }
+
+    .table-row {
+        display: flex;
+        flex-direction: row;
+
+        &:hover {
+            background-color:greenyellow;
+        }
+
+        div {
+            flex:1 1 50%;
+            border-right:solid 1px silver;
+            border-bottom : solid 1px silver;
+            padding: 10px;
+        }
+
+        div:nth-child(2) {
+            border-right: none;
+        }
+
+        
+    }
+
+    .table-row:nth-last-child(1) {
+        div {
+            border-bottom:none;
+        }
+
+        div:nth-child-of(2) {
+            border-right: none;
+        }
+    }
+
+   
 }

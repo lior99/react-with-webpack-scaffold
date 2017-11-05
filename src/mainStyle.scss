@@ -78,6 +78,33 @@ body, html {
             border-right: none;
         }
     }
-
-   
 }
+
+.add-new-item-form {
+    select {
+        padding:10px;
+        border-radius:5px;
+        margin: 10px;
+        border: solid 1px darkgrey;
+        outline: none;
+    }
+
+    input {
+        padding: 9px;
+        outline: none;
+        margin-right: 10px;
+    }
+
+    button {
+        background-color: plum;
+        border: none;
+        height: 50px;
+        // width: 100px;
+        padding: 10px;
+        color: #000;
+        cursor: pointer;
+        font-weight: bold;
+
+    }
+}
+

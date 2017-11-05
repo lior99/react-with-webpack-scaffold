@@ -1,25 +1,33 @@
 import React from 'react';
 import Header from './components/Header';
 import SimpleTable from './components/SimpleTable';
+import AddNewItem from './components/AddNewItem';
+import itemsActions from './actions/itemsActions';
 
-const items = [
-    { id:1, text : "some string", type: "string" },
-    { id:2, text : "35673", type: "number" },
-    { id:3, text : "bla bla bla", type: "string" },
-    { id:4, text : "4.23", type: "floating number" },
-    { id:5, text : "{id:1, type:2}", type: "object" },
-    { id:6, text : "function(){console.log('hello world!')}", type: "function" },
-]
+import { connect } from 'react-redux';
 
 class App extends React.Component {
     render() {
         return (
             <div>
-                <Header headerText="This is sample"/>                
-                <SimpleTable items={ items } />
+                <Header headerText="This is sample"/>  
+                <AddNewItem addNewItem={ this.props.addNewItem }/>              
+                <SimpleTable items={ this.props.items } />
             </div>
         )
     }
 }
 
-export default App;
+const mapDispatchToProps = (dispatch) => {
+    return {
+        addNewItem : (newItem) => { dispatch(itemsActions.addNewItem(newItem))}
+    }
+}
+
+const mapStateToProps = (state) => {
+    return {
+        items : state.items
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

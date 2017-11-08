@@ -10,6 +10,8 @@
         "semi": ["warn", "always", { "omitLastInOneLineBlock": true}],
         "react/jsx-indent": ["warn", 4],
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-        "arrow-body-style": ["error", "as-needed"]
+        "arrow-body-style": ["error", "as-needed"],
+        "comma-dangle":"off",
+        "eol-last":"off"
     }
 }

@@ -22,6 +22,6 @@ const App = () => (
         <Header headerText="This is sample" />
         <SimpleTable items={items} />
     </div>
-)
+);
 
 export default App;

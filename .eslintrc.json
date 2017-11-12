@@ -5,13 +5,22 @@
         "jsx-a11y",
         "import"
     ],
+    "env": {
+        "browser": true,
+        "node": true
+    },
     "rules": {
         "indent": ["error", 4],
-        "semi": ["warn", "always", { "omitLastInOneLineBlock": true}],
+        "eqeqeq" : 1,
+        "semi" : [0, "always"],
         "react/jsx-indent": ["warn", 4],
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
         "arrow-body-style": ["error", "as-needed"],
         "comma-dangle":"off",
-        "eol-last":"off"
+        "eol-last":"off",
+        "linebreak-style":["error", "windows"]
+    },
+    "globals": {
+        "window": true
     }
 }

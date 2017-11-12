@@ -3,11 +3,11 @@ const webpack = require('webpack');
 
 module.exports = {
     entry: [
-        'react-hot-loader/patch',
         'babel-polyfill',
+        'react-hot-loader/patch',
         'webpack-dev-server/client?http://0.0.0.0:5000',
         'webpack/hot/only-dev-server',
-        path.resolve(__dirname, '/src/index.js'),
+        path.resolve(__dirname, 'src/index.js'),
     ],
     output: {
         path: path.resolve(__dirname, '/build'),
